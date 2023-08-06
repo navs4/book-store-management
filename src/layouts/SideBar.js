@@ -18,13 +18,16 @@ const SIDE_BAR_LINK = [{
 
 
 function SideBar() {
-    return <ul className={styles.sidebar}>
+    return  <div>
+        <ul className={styles.sidebar}>
         {SIDE_BAR_LINK.map((e) => {
             return <li>
                 <Link to={`${e.value}`}>{e.name}</Link>
             </li>
         })}
     </ul>
+    </div>
+    
 }
 
 

@@ -10,7 +10,7 @@ function RootLayout() {
         <Header />
         <Outlet />
 
-        <SideBar />
+        {/* <SideBar /> */}
         {/* <Footer /> */}
     </div>
 }
