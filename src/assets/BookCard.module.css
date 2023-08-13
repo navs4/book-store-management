@@ -1,0 +1,8 @@
+.bookCard {
+    width: 80%;
+}
+
+
+.bookCard:hover {
+    background: beige;
+}
