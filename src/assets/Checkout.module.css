@@ -1,0 +1,6 @@
+.active{
+    text-decoration: underline;
+    /* color-interpolation: linearrgb; */
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+}

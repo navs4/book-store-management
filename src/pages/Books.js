@@ -9,7 +9,9 @@ const books = [
         "src":  "/books/Wings_of_Fire_by_A_P_J_Abdul_Kalam_Book_Cover.jpg",
         "rating": 1,
         "price": 200,
-        "currency": "Rs"
+        "currency": "Rs",
+        "author": "APJ Abdul Kalam",
+        "description": "A collection of world's timeless classics, this box set includes the four greatest bestsellers, which have inspired readers for generations. Packed with wisdom and time-tested principles that are as relevant in modern times as ever before, these inspirational books are a must-read for all those aspiring for personal growth and wealth."
     },
 
     {
@@ -18,7 +20,9 @@ const books = [
         "src":  "/books/potter.avif",
         "rating": 2,
         "price": 2050,
-        "currency": "Rs"
+        "currency": "Rs",
+        "author": "JK Rowling",
+        "description": "A collection of world's timeless classics, this box set includes the four greatest bestsellers, which have inspired readers for generations. Packed with wisdom and time-tested principles that are as relevant in modern times as ever before, these inspirational books are a must-read for all those aspiring for personal growth and wealth."
     },
 
     {
@@ -27,7 +31,9 @@ const books = [
         "src":  "/books/dusk till dawn.jpg",
         "rating": 2,
         "price": 1000,
-        "currency": "Rs"
+        "currency": "Rs",
+        "author": "Zyan Malik",
+        "description": "A collection of world's timeless classics, this box set includes the four greatest bestsellers, which have inspired readers for generations. Packed with wisdom and time-tested principles that are as relevant in modern times as ever before, these inspirational books are a must-read for all those aspiring for personal growth and wealth."
     },
 
     {
@@ -36,7 +42,9 @@ const books = [
         "src":  "/books/speak.jpg",
         "rating": 5,
         "price": 300,
-        "currency": "Rs"
+        "currency": "Rs",
+        "author": "Ankur Warikoo",
+        "description": "A collection of world's timeless classics, this box set includes the four greatest bestsellers, which have inspired readers for generations. Packed with wisdom and time-tested principles that are as relevant in modern times as ever before, these inspirational books are a must-read for all those aspiring for personal growth and wealth."
     },
 
     {
@@ -45,7 +53,9 @@ const books = [
         "src":  "/books/speak.jpg",
         "rating": 4,
         "price": 400,
-        "currency": "Rs"
+        "currency": "Rs",
+        "author": "Chetan Bhagat",
+        "description": "A collection of world's timeless classics, this box set includes the four greatest bestsellers, which have inspired readers for generations. Packed with wisdom and time-tested principles that are as relevant in modern times as ever before, these inspirational books are a must-read for all those aspiring for personal growth and wealth."
     }
 ]
 

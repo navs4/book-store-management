@@ -4,7 +4,8 @@ import HomePage from '../pages/HomePage'
 import Books from "../pages/Books";
 import Reports from "../pages/Reports";
 import Orders from "../pages/Orders";
-
+import BookDetailsPage from "../pages/BookDetailsPage";
+import CheckoutPage from "../pages/CheckoutPage";
 
 const routes = createBrowserRouter([
     {
@@ -30,7 +31,18 @@ const routes = createBrowserRouter([
             {
                 path: '/orders',
                 element: <Orders/>
-            }
+            },
+
+            {
+                path: 'books/:bookId',
+                element: <BookDetailsPage />
+            },
+
+
+            {
+                path: '/checkout',
+                element: <CheckoutPage />
+            },
         ]
     }
 ]);
