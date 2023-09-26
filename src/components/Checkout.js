@@ -4,6 +4,9 @@ import PaymentDetails from "./PaymentDetails";
 import AddressDetails from "./AddressDetails";
 import CustomDetails from "./CustomerDetails";
 
+
+
+
 function Checkout() {
     const [active, setActive] = useState("Customer Details");
 
@@ -12,22 +15,34 @@ function Checkout() {
         setActive(tab);
     }
 
+
+    const CHECKOUT_TABS = ['Customer Details', 'Address', 'Payment Details'];
+
+
+    const tabsHandler = (buttonType) => {
+
+        if (String(buttonType) == 'next') {
+            setActive(CHECKOUT_TABS[CHECKOUT_TABS.indexOf(active) + 1]);
+        }
+
+        if (String(buttonType) == 'previous') {
+            setActive(CHECKOUT_TABS[CHECKOUT_TABS.indexOf(active) - 1]);
+        }
+
+
+    }
+
     return <div>
         <ul>
-            <li>
-                <a className={active == 'Customer Details' ? styles.active : ''} onClick={() => toggleAction('Customer Details')}>Customer Details</a>
-            </li>
-
-            <li>
-                <a className={active == 'Address' ? styles.active : ''} onClick={() => toggleAction('Address')}>Address</a>
-            </li>
-
-
-
-            <li>
-                <a className={active == 'Payment Details' ? styles.active : ''} onClick={() => toggleAction('Payment Details')}>Payment Details</a>
-            </li>
-
+            {
+                CHECKOUT_TABS.map((tab) => {
+                    return (
+                        <li>
+                            <a className={active == tab ? styles.active : ''} onClick={() => toggleAction(tab)}>{tab}</a>
+                        </li>
+                    )
+                })
+            }
         </ul>
 
 
@@ -43,6 +58,9 @@ function Checkout() {
         {
             active == 'Customer Details' && <CustomDetails />
         }
+
+        <button onClick={() => tabsHandler('previous')}>Previous</button>
+        <button onClick={() => tabsHandler('next')}>Next</button>
 
     </div>
 }
